@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER Ram Iyer
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -18,10 +18,4 @@ RUN apt-get install -y \
   libpq-dev \
   libsqlite3-dev \
   zlib1g-dev
-
-
-# Configure git
-RUN git config --global color.ui true
-RUN git config --global user.name "Ram Iyer"
-RUN git config --global user.email "ramky.iyer@gmail.com"
 
